@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samnang's Hobbies</title>
+    <style>
+        body {
+            font-family: 'Helvetica', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+            color: #333;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 10px;
+        }
+        img {
+            border-radius: 50%;
+            margin-bottom: 20px;
+            max-width: 150px; /* Smaller image size */
+            width: 100%; /* Maintain proportion and responsive behavior */
+            height: auto;
+        }
+        hr {
+            border: 1px solid #ccc;
+            margin: 20px 0;
+        }
+        ol {
+            padding-left: 20px;
+        }
+        ol li {
+            margin: 5px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px;
+            background-color: #007bff; /* Blue background color */
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        .container {
+            max-width: 600px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: white; /* Light background for content */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+            margin-top: 30px;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+        }
+
+        .container:hover {
+            transform: scale(1.05); /* Slight scaling effect on hover */
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            .container {
+                padding: 15px;
+            }
+            img {
+                max-width: 120px; /* Smaller size for smaller screens */
+            }
+        }
+        @media (max-width: 480px) {
+            .container {
+                padding: 10px;
+                font-size: 14px;
+            }
+            img {
+                max-width: 100px; /* Even smaller size for mobile screens */
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <h1>My Hobbies</h1>
+        <ol>
+            <li><strong>Exploring Technology:</strong> Staying updated on emerging trends and innovations in software development.</li>
+            <li><strong>Reading:</strong> Engaging with self-improvement books to develop skills in productivity, leadership, and personal growth.</li>
+            <li><strong>Audiobooks: </strong>Listening to inspiring audiobooks on technology, business, and motivation during leisure time.</li>
+            <li><strong>Problem-Solving Activities:</strong> Enjoying puzzles and coding challenges to sharpen logical thinking and creativity.</li>
+            <li><strong>Outdoor Relaxation: </strong>Reading or reflecting in natural settings to recharge and foster fresh perspectives.</li>
+        </ol>
+        <hr>
+    </div>
+
+</body>
+
+</html>

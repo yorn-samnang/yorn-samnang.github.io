@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Samnang's Resume</title>
+    <style>
+        /* Global Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Ensure full width and no overflow */
+html, body {
+  width: 100%;
+  overflow-x: hidden; /* Prevent horizontal scroll */
+  font-family: 'Helvetica', sans-serif;
+  background-color: #f4f4f9;
+  color: #333;
+}
+
+/* Typography */
+h1, h2 {
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Images */
+img {
+  border-radius: 50%;
+  margin-bottom: 10px;
+  max-width: 150px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Horizontal Rule */
+hr {
+  border: 1px solid #ccc;
+  margin: 20px 0;
+}
+
+/* Lists */
+ul {
+  padding-left: 20px;
+}
+
+ul li {
+  margin: 5px 0;
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: white;
+  color: black;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Containers */
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.container:hover {
+  transform: translateY(-10px);
+}
+
+/* Section Cards */
+.section-card {
+  margin-bottom: 30px;
+  padding: 15px;
+  background-color: #f9f9f9;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.section-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .container {
+    padding: 15px;
+  }
+
+  img {
+    max-width: 120px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 10px;
+    font-size: 14px;
+  }
+
+  img {
+    max-width: 100px;
+  }
+}
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+
+        <!-- Profile Section -->
+        <div class="section-card">
+            <img src="../assets/images/my_face.jpg" alt="Samnang's image">
+            <h1>Samnang Yorn</h1>
+        </div>
+
+        <!-- Summary Section -->
+        <div class="section-card">
+            <h2>Summary</h2>
+            <p>A dedicated <span style="font-weight: bold;">Software Development</span> major at <span style="font-weight: bold;">American University of Phnom Penh</span>, passionate about technology
+                and innovation. Committed to learning and applying technical skills to meaningful projects in the tech
+                industry.</p>
+        </div>
+
+        <!-- Education Section -->
+        <div class="section-card">
+            <h2>Education</h2>
+            <ul>
+                <li>Bachelor of Science in <span style="font-weight: bold;">Software Development</span>
+                    <p> <span style="font-weight: bold;">American University of Phnom Penh</span>, Cambodia</p>
+                    <p>Expected Graduation: 2027</p>
+                </li>
+                <li>Cambodian National Exam (BaccII)
+                    <p><span style="font-weight: bold;">Hun Sen Tonal Totoeng High School</span>, Kandal Province</p>
+                    <p>Kandal Province Graduated: 2023 with an Overall <span style="font-weight: bold;">Grade: A</span></p>
+                </li>
+            </ul>
+        </div>
+
+        <!-- Objective Section -->
+        <div class="section-card">
+            <h2>Objective</h2>
+            <p>Aspiring Web Developer with a strong foundation in programming and problem-solving. Seeking opportunities
+                to contribute technical skills and innovation in a dynamic organization.</p>
+        </div>
+
+        <!-- Skills Section -->
+        <div class="section-card">
+            <h2>Skills</h2>
+            <ul>
+                <li>Programming: Python3, HTML, CSS</li>
+                <li>Frameworks: Bootstrap, Tkinter, PyQt6</li>
+                <li>Database: MySQL, SQLite3</li>
+                <li>Tools: GitHub, VS Code, Web Development Tools</li>
+                <li>Soft Skills: Problem-solving, teamwork, adaptability, communication</li>
+            </ul>
+        </div>
+
+        <!-- Certifications Section -->
+        <div class="section-card">
+            <h2>Certifications</h2>
+            <ul>
+                <li>Certified: The Complete 2024 Web Development Bootcamp</li>
+            </ul>
+        </div>
+
+        <!-- Projects Section -->
+        <div class="section-card">
+            <h2>Projects</h2>
+            <ul>
+                <li>SpendWise: Expense Tracker App</li>
+                <li>Number Conversion: Calculation</li>
+                <li>Weather App: Analysis</li>
+            </ul>
+        </div>
+
+        <!-- Others Section -->
+        <div class="section-card">
+            <h2>Others</h2>
+            <ul>
+                <li><a href="hobbies.html">My Hobbies</a></li>
+                <li><a href="contact.html">My Contact</a></li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer class="text-center py-3">
+        &copy; 2024 Samnang Yorn. All rights reserved.
+    </footer>
+
+</body>
+
+</html>
