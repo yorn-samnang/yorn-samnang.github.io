@@ -5,84 +5,51 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samnang's Hobbies</title>
-    <style>
-        body {
-            font-family: 'Helvetica', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f0f0f0;
-            color: #333;
-        }
-        h1 {
-            color: #333;
-            margin-bottom: 10px;
-        }
-        img {
-            border-radius: 50%;
-            margin-bottom: 20px;
-            max-width: 150px; /* Smaller image size */
-            width: 100%; /* Maintain proportion and responsive behavior */
-            height: auto;
-        }
-        hr {
-            border: 1px solid #ccc;
-            margin: 20px 0;
-        }
-        ol {
-            padding-left: 20px;
-        }
-        ol li {
-            margin: 5px 0;
-        }
-        footer {
-            text-align: center;
-            padding: 10px;
-            background-color: #007bff; /* Blue background color */
-            color: white;
-            position: relative;
-            bottom: 0;
-            width: 100%;
-        }
-        .container {
-            max-width: 600px;
-            margin: 0 auto;
-            padding: 20px;
-            background-color: white; /* Light background for content */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 10px;
-            margin-top: 30px;
-            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-        }
-
-        .container:hover {
-            transform: scale(1.05); /* Slight scaling effect on hover */
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Enhanced shadow */
-        }
-
-        /* Responsive Design */
-        @media (max-width: 768px) {
-            .container {
-                padding: 15px;
-            }
-            img {
-                max-width: 120px; /* Smaller size for smaller screens */
-            }
-        }
-        @media (max-width: 480px) {
-            .container {
-                padding: 10px;
-                font-size: 14px;
-            }
-            img {
-                max-width: 100px; /* Even smaller size for mobile screens */
-            }
-        }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 
 <body>
+    <!-- Navigation -->
+    <nav id="nav-bar">
+        <div class="nav-container">
+            <a class="nav-brand" href="../index.html#summary">
+                <i class="fa fa-code"></i>
+                <span>Samnang</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#education">
+                        <i class="fa fa-graduation-cap"></i> <span>Education</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#skills">
+                        <i class="fa fa-code"></i> <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#projects">
+                        <i class="fa fa-folder-open"></i> <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="./contact.html">
+                        <i class="fa fa-envelope"></i> <span>Contact Me</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="container">
+    <div class="container-card">
         <h1>My Hobbies</h1>
         <ol>
             <li><strong>Exploring Technology:</strong> Staying updated on emerging trends and innovations in software development.</li>
@@ -94,6 +61,29 @@
         <hr>
     </div>
 
+    <footer>
+        &copy; 2026 Samnang Yorn. All rights reserved.
+    </footer>
+
+    <script>
+        // Mobile navigation toggle
+        const navToggle = document.getElementById('navToggle');
+        const navMenu = document.getElementById('navMenu');
+        
+        navToggle.addEventListener('click', function() {
+            navMenu.classList.toggle('active');
+            navToggle.classList.toggle('active');
+        });
+        
+        // Close menu when clicking on a link
+        const navLinks = document.querySelectorAll('.nav-link');
+        navLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                navMenu.classList.remove('active');
+                navToggle.classList.remove('active');
+            });
+        });
+    </script>
 </body>
 
 </html>

@@ -4,81 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Information</title>
-    <style>
-        body {
-            font-family: 'Open Sans', sans-serif;
-            margin: 0;
-            padding: 0;
-            background-color: #f4f4f9;
-            color: #333;
-        }
-        .container {
-            max-width: 600px;
-            margin: 50px auto;
-            padding: 30px;
-            background-color: #ffffff;
-            border-radius: 10px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            transition: box-shadow 0.3s ease, transform 0.3s ease;
-        }
-        .container:hover {
-            box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
-            transform: translateY(-5px);
-        }
-        h1 {
-            text-align: center;
-            color: #2c3e50;
-            margin-bottom: 20px;
-        }
-        .contact-info {
-            margin-top: 20px;
-        }
-        .contact-info p {
-            margin: 10px 0;
-            font-size: 18px;
-        }
-        .contact-info a {
-            color: #007bff;
-            text-decoration: none;
-            font-weight: bold;
-            transition: color 0.3s ease;
-        }
-        .contact-info a:hover {
-            color: #0056b3;
-            text-decoration: underline;
-        }
-        .social-icons {
-            margin-top: 20px;
-            text-align: center;
-        }
-        .social-icons a {
-            margin: 0 15px;
-            font-size: 28px; /* Larger icon size for better visibility */
-            color: #555;
-            transition: color 0.3s ease;
-        }
-        .social-icons a:hover {
-            color: #007bff;
-        }
-    </style>
+    <link rel="icon" type="image/svg+xml" href="../favicon.svg">
+    <link rel="stylesheet" href="../style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
 </head>
 <body>
+    <nav id="nav-bar">
+        <div class="nav-container">
+            <a class="nav-brand" href="../index.html#summary">
+                <i class="fa fa-code"></i>
+                <span>Samnang</span>
+            </a>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-menu" id="navMenu">
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#education">
+                        <i class="fa fa-graduation-cap"></i> <span>Education</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#skills">
+                        <i class="fa fa-code"></i> <span>Skills</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../index.html#projects">
+                        <i class="fa fa-folder-open"></i> <span>Projects</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./contact.html">
+                        <i class="fa fa-envelope"></i> <span>Contact Me</span>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </nav>
 
-    <div class="container">
+    <div class="container-card">
         <h1>Contact Information</h1>
         <div class="contact-info">
             <p><strong>Phone:</strong> +855 86 589 019 / +855 71 311 3780</p>
-            <p><strong>Email:</strong> <a href="mailto:samnangyornofficial@gmail.com">samnangyornofficial@gmail.com</a></p>
+            <p><strong>Email:</strong> <a href="mailto:samnangyorn082@gmail.com">samnangyorn082@gmail.com</a></p>
             <p><strong>LinkedIn:</strong> <a href="https://linkedin.com/in/yorn-samnang-a9242b2a3" target="_blank">linkedin.com/in/yorn-samnang-a9242b2a3</a></p>
-            <p><strong>Telegram:</strong> <a href="https://t.me/samnangsmile168" target="_blank">@samnangsmile168</a></p>
+            <p><strong>Telegram:</strong> <a href="https://t.me/samnang082" target="_blank">@samnang082</a></p>
             <p><strong>Facebook:</strong> <a href="https://www.facebook.com/share/19yqLC5GCu/?mibextid=LQQJ4d" target="_blank">facebook.com/share/19yqLC5GCu</a></p>
         </div>
         <div class="social-icons">
-            <a href="https://linkedin.com/in/yourprofile" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://t.me/yourprofile" target="_blank"><i class="fab fa-telegram"></i></a>
-            <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://linkedin.com/in/yorn-samnang-a9242b2a3" target="_blank"><i class="fab fa-linkedin"></i></a>
+            <a href="https://t.me/samnang082" target="_blank"><i class="fab fa-telegram"></i></a>
+            <a href="https://www.facebook.com/share/19yqLC5GCu/?mibextid=LQQJ4d" target="_blank"><i class="fab fa-facebook"></i></a>
         </div>
     </div>
 
+    <footer>
+        &copy; 2026 Samnang Yorn. All rights reserved.
+    </footer>
 </body>
 </html>
